@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1000px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-info .burger {
+    display: block !important;
+    margin-top: 5px;
+  }
+  .nav-info .nav-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 40px;
+  }
+  .card {
+    margin: 0 auto;
+  }
+  .content {
+    position: relative;
+    top: 10%;
+  }
+  .content .title {
+    display: block;
+    color: #fff;
+    text-align: center;
+  }
+  .content .price-duration {
+    margin: 0 auto;
+    max-width: 230px;
+  }
+  .content .description {
+    font-size: 110%;
+    text-align: center;
+    margin: 30px 0;
+  }
+  .content .activities {
+    text-align: center;
+  }
+  .footer {
+    margin: 50px 0;
+    width: 100%;
+  }
+  .footer .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  body {
+    font-size: 14px;
+  }
+  .nav-logo {
+    margin: 0 auto;
+  }
+  .title {
+    font-size: 15px;
+  }
+  .description {
+    font-size: 90%;
+  }
+  .btn {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=queries.css.map */

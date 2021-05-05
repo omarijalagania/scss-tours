@@ -1,0 +1,82 @@
+@media only screen and (max-width: 1000px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .nav-links {
+        display: none;
+    }
+
+    .nav-info {
+
+        .burger {
+            display: block !important;
+            margin-top: 5px;
+        }
+
+    .nav-links.active {
+            
+            display: flex;
+            justify-content: center;
+            padding-top: 40px;
+        }
+    }
+    
+
+    .card {
+        margin: 0 auto;
+    }
+
+    .content {
+        position: relative;
+        top: 10%;
+
+        .title {
+            display: block;
+            color: #fff;
+            text-align: center;
+        }
+        .price-duration {
+            margin: 0 auto;
+            max-width: 230px;
+        }
+        .description {
+            font-size: 110%;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .activities {
+            text-align: center;
+        }
+    }
+    .footer {
+        margin:50px 0;
+        width: 100%;
+
+        .footer-list {
+            justify-content: center;
+        }
+    }
+}
+
+@media only screen and (max-width: 330px){
+    body {
+        font-size: 14px;
+    }
+    .nav-logo {
+        margin: 0 auto;
+    }
+    .title {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 90%;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+}

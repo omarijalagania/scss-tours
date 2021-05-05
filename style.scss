@@ -1,0 +1,186 @@
+@import './reset';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@mixin transition {
+    transition: all 0.5s ease-in-out;
+}
+
+$primary-color: #fff;
+$secondary-color: rgb(214, 214, 214);
+$hover-color: orange;
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: $primary-color;
+    height: 100vh;
+    background-color: rgb(190, 217, 238);
+}
+
+.header {
+    position: relative;
+    background: 
+    linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(/images/background.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    min-width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 1px rgba(39,39,39,0.65);
+}
+.nav-conteiner {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .nav-logo {
+        text-transform: uppercase;
+        font-size: 110%;
+        cursor: pointer;
+
+        &:hover {
+            color: $hover-color;
+            @include transition();
+        }
+    }
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-links {
+        list-style: none;
+        padding: 0 10px;
+        a {
+            @include transition();
+            color: $primary-color;
+            text-decoration: none;
+            font-size: 85%;
+            font-weight: 300;
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+    .nav-info {
+
+        .burger {
+            display: none;
+        }
+
+        #burger-icon {
+            position: relative;
+            color: $primary-color;
+            font-size: 200%;
+            cursor: pointer;
+            z-index: 2;
+        }
+
+    }
+    .active {
+        display: block;
+        position: absolute;
+        right: 3rem;
+        top: 3rem;
+        width: 50%;
+        height: 74vh;
+        background-color: #272727;
+        border-radius: 5px;
+        z-index: 1;
+        @include transition(); 
+        }
+    }
+
+
+
+
+.content {
+    position: absolute;
+    top:60%;
+    margin:0 3rem;
+    min-height: 10vh;
+
+    .title {
+        color: $secondary-color;
+        text-transform: uppercase;
+        font-weight: 300;
+        display: inline-block;
+    }
+    .price-duration {
+        max-width: 257px;
+        margin-top: 7px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .price {
+            font-weight: 600;
+        }
+        .duration {
+            color: $secondary-color;
+            font-size: 70%;
+        }
+    }
+    .description {
+        margin: 10px 0;
+        font-size: 80%;
+        font-weight: 300;
+        max-width: 400px;
+    }
+    .btn {
+        border: 0;
+        padding: 5px;
+        background: transparent;
+        color: $primary-color;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:hover {
+            @include transition();
+            color: $hover-color;
+        }
+    }
+}
+
+.footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 3rem;
+
+    #{&}-list {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        text-transform: uppercase;
+        .footer-item {
+            padding: 0 10px;
+
+            a {
+                color: $primary-color;
+                text-decoration: none;
+                font-size: 80%;
+                font-weight: 600;
+
+                #search {
+                    margin-top: 3px;
+                    width: 20px;
+                    height: 20px;
+                    background-color: rgba(90, 89, 89, 0.89);
+                    padding: 15px;
+                    border-radius: 50%;
+                }
+
+                &:hover {
+                    color: $hover-color;
+                    @include transition();
+                }
+            }
+        }
+    }
+}
+
